@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    //상단
+    <!--    <TextView-->
+    <!--        android:id="@+id/response"-->
+    <!--        android:layout_width="365dp"-->
+    <!--        android:layout_height="135dp"-->
+    <!--        android:layout_marginTop="4dp"-->
+    <!--        android:background="#E7F1F6"-->
+    <!--        android:fontFamily="@font/nanums_r"-->
+    <!--        android:gravity="center"-->
+    <!--        android:text="시각장애인을 위한 방문 등록 패스"-->
+    <!--        android:textAlignment="center"-->
+    <!--        android:textColor="#000000"-->
+    <!--        android:textIsSelectable="true"-->
+    <!--        android:textSize="20sp"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.0"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+    // 중앙
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="349dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="110dp"
+            android:fontFamily="@font/nanums_r"
+            android:text="시각장애인을 위한 방문 등록 패스"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/response"
+            android:layout_width="295dp"
+            android:layout_height="52dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="68dp"
+            android:background="#FAF4F1"
+            android:fontFamily="@font/nanums_r"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textIsSelectable="true"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <fragment
+            android:id="@+id/googleMap"
+            android:layout_gravity="center"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="380dp"
+            android:layout_height="350dp"
+            map:layout_constraintBottom_toBottomOf="parent"
+            map:layout_constraintEnd_toEndOf="parent"
+            map:layout_constraintStart_toStartOf="parent" />
+    </LinearLayout>
+
+</LinearLayout>
