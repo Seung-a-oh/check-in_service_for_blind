@@ -1,4 +1,4 @@
-package com.example.pleas_pleas;
+package com.example.comfortable;
 
 import android.content.Context;
 

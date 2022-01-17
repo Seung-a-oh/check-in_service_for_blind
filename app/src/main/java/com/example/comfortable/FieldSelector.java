@@ -1,4 +1,4 @@
-package com.example.pleas_pleas;
+package com.example.comfortable;
 
 import com.google.android.libraries.places.api.model.Place.Field;
 import java.util.ArrayList;
